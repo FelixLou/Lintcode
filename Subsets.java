@@ -1,4 +1,4 @@
-Question: http://www.lintcode.com/submission/463489/
+Question: http://www.lintcode.com/en/problem/subsets/
 
 Answer:
 class Solution {
