@@ -11,13 +11,14 @@ class Solution {
             return -1;
         int i;
         int j;
-        for(i=0;i<source.length()-target.length()+1;i++){
+        for(i=0;i<source.length()-target.length()+1;i++){ // the loop can end when i == source.length()-target.length()+1
             for(j=0;j<target.length();j++){
                 if(source.charAt(i+j) != target.charAt(j))
                     break;
             }
-            if(j == target.length())
+            if(j == target.length()){
                 return i;
+            }
         }
         return -1;
     }
