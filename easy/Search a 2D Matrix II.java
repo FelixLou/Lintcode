@@ -7,6 +7,7 @@ public class Solution {
      */
      //Search from top-right to bottom-left 
      //Then, you have only one choice each time
+     //Remember to consider null pointer, not only the matrix itself, but also matrix[0]
     public int searchMatrix(int[][] matrix, int target) {
         // write your code here
         if (matrix == null || matrix.length == 0){
