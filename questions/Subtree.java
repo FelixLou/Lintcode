@@ -1,5 +1,6 @@
 Question: http://www.lintcode.com/en/problem/subtree/
 Discussion: http://codereview.stackexchange.com/questions/6774/check-if-a-binary-tree-is-a-subtree-of-another-tree
+
 /**
  * Definition of TreeNode:
  * public class TreeNode {
@@ -17,7 +18,7 @@ public class Solution {
      * @return: True if T2 is a subtree of T1, or false.
      */
     public boolean equals(TreeNode n1, TreeNode n2) {
-        if (n1 == n2){
+        if (n1 == n2){   // == is more strict than equals(), how n1 and n2 can be ==? 
            return true; 
         } 
         if (n1 == null || n2 == null){
