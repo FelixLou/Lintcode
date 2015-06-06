@@ -1,3 +1,5 @@
+Question: http://www.lintcode.com/en/problem/subtree/
+Discussion: http://codereview.stackexchange.com/questions/6774/check-if-a-binary-tree-is-a-subtree-of-another-tree
 /**
  * Definition of TreeNode:
  * public class TreeNode {
