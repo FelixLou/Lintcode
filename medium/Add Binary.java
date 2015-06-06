@@ -84,3 +84,34 @@ public String addBinary(String a, String b) {
         
         return sb.toString();
     }
+/****************************************************************/
+//recursive
+public class Solution {
+    public String addBinary(String a, String b, int carry) {
+        if (a.length()==0 && b.length()==0) {
+            if (carry==1) {
+                return "1";
+            }
+            else {
+                return "";
+            }
+        }
+        String aLeft = a;
+        int sum = 0;
+        if (a.length()>0){
+            aLeft = a.substring(0, a.length()-1);
+            sum = sum + a.charAt(a.length()-1) - '0';
+        }
+        String bLeft = b;
+        if (b.length()>0){
+            bLeft = b.substring(0, b.length()-1);
+            sum = sum + b.charAt(b.length()-1) - '0';
+        }
+        sum = sum + carry;
+        return addBinary(aLeft, bLeft, sum/2) + Integer.toString(sum%2);
+
+    }
+    public String addBinary(String a, String b) {
+        return addBinary(a, b, 0);
+    }
+} 
