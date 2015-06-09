@@ -1,4 +1,5 @@
 Question: http://www.lintcode.com/en/problem/merge-intervals/
+
 Similar to: http://www.lintcode.com/en/problem/insert-interval/
 ```
 /**
