@@ -1,7 +1,9 @@
 Question: http://www.lintcode.com/en/problem/gas-station/
+
 //If the sum of gas is more than the sum of cost, it could success. So the thing you need to do is to find 
 //where you should start.
-```public class Solution {
+```
+public class Solution {
     /**
      * @param gas: an array of integers
      * @param cost: an array of integers
@@ -26,4 +28,5 @@ Question: http://www.lintcode.com/en/problem/gas-station/
         }
         return total >= 0? index + 1: -1;
     }
-}```
+}
+```
