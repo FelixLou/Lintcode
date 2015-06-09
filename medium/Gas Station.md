@@ -1,7 +1,6 @@
 Question: http://www.lintcode.com/en/problem/gas-station/
 
-//If the sum of gas is more than the sum of cost, it could success. So the thing you need to do is to find 
-//where you should start.
+Note: If the sum of gas is more than the sum of cost, it could success. So the thing you need to do is to find where you should start.
 ```
 public class Solution {
     /**
