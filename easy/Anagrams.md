@@ -1,11 +1,7 @@
 Question: http://www.lintcode.com/en/problem/anagrams/
+
 Related: http://www.lintcode.com/en/problem/two-strings-are-anagrams/
 ```
-public class Solution {
-    /**
-     * @param strs: A list of strings
-     * @return: A list of strings
-     */
     public ArrayList<String> anagrams(String[] strs) {
         // write your code here
     	ArrayList<String> result = new ArrayList<String>();
@@ -14,14 +10,13 @@ public class Solution {
         }
         boolean[] added = new boolean[strs.length];
         for (int i = 0; i < strs.length - 1; i++){
-        	
+        	int k = 0;
             for (int j = i + 1; j < strs.length; j++){
-                if (isAnagrams(strs[i],strs[j])){
-                    if (!added[i]){
-                        result.add(strs[i]);  
-                        added[i] = true;
-                      //  System.out.println("i "+strs[i]);
-                    }
+                if (!added[i] && isAnagrams(strs[i],strs[j])){
+                        while(k < 1){
+                            result.add(strs[i]);
+                            k++;
+                        }
                     if (!added[j]){
                         result.add(strs[j]);   
                         added[j] = true;
@@ -29,6 +24,7 @@ public class Solution {
                     }
                 }
             }
+            added[i] = false;
         }
         return result;
     }
@@ -49,5 +45,4 @@ public class Solution {
         }
         return true;
     }
-}
 ```
