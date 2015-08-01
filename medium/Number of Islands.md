@@ -1,5 +1,5 @@
 Question: http://www.lintcode.com/en/problem/number-of-islands/
-
+```
    private void removeIsland(boolean[][] grid, int i, int j){
         int rows = grid.length;
         int cols = grid[0].length;
@@ -45,3 +45,4 @@ Question: http://www.lintcode.com/en/problem/number-of-islands/
         }
         return result;
     }
+```
