@@ -1,4 +1,5 @@
 Question: http://www.lintcode.com/en/problem/find-the-missing-number/
+
 Answer: http://www.geeksforgeeks.org/find-the-missing-number/
 ```
 public class Solution {
