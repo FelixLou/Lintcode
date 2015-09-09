@@ -14,7 +14,7 @@ Question: https://leetcode.com/problems/permutation-sequence/
             int sum = factorial(i - 1);
             int kth = (int) Math.ceil(k / (double) sum);          ////     get新技能！
             result += num.get(kth);
-            num.remove(kth);
+            num.remove(kth);                                    ///get 新技能！
             k = k %sum;
             if(k == 0) k = sum;
         }
