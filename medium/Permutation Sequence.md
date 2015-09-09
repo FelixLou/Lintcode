@@ -12,7 +12,7 @@ Question: https://leetcode.com/problems/permutation-sequence/
  
         for (int i = n; i > 0; i--){
             int sum = factorial(i - 1);
-            int kth = (int) Math.ceil(k / (double) sum);
+            int kth = (int) Math.ceil(k / (double) sum);          ////     get新技能！
             result += num.get(kth);
             num.remove(kth);
             k = k %sum;
